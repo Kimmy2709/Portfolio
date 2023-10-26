@@ -1,0 +1,54 @@
+.contact {
+    padding: 100px 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(img/background_web.svg);
+    background-repeat: no-repeat;
+}
+
+.contact h2 {
+    font-family: 'Lora', sans-serif;
+    font-weight: lighter;
+    font-size: 50px;
+    color: #0b3d4dd7;
+    padding-bottom: 20px;
+}
+
+.contact h4 {
+    font-family: 'Bona Nova', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.contact__info h4 {
+    margin-top: 40px;
+    font-weight: 400;
+    padding-bottom: 20px;
+
+}
+
+.contact__info {
+    padding: 30px;
+}
+
+.contact__icon a {
+    padding: 20px;
+}
+
+.contact_private {
+    color: #0b3d4dd7;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact__icon img {
+    transition: all 400ms ease;
+    box-shadow: rgba(1, 20, 13, 0.15);
+    cursor: pointer;
+}
+
+.contact__icon img:hover {
+    transform: translateY(-10%);
+    box-shadow: rgba(0, 0, 0, 0.15);
+}

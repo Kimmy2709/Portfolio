@@ -1,0 +1,247 @@
+.menu-container {
+    background-image: url(./img/background.png);
+}
+
+.menu {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 70px;
+
+}
+
+.toggle__menu {
+    width: 30px;
+    position: absolute;
+    top: 3rem;
+    right: 0rem;
+    cursor: pointer;
+}
+
+.toggle__menu img {
+    max-width: 100%;
+}
+
+@media screen and (min-width:768px) {
+    .toggle__menu {
+        display: none;
+    }
+}
+
+.menu-lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-150%);
+    transition: transform 0.3s;
+    font-size: 25px;
+}
+
+.menu-lista--show {
+    transform: translateY(0);
+}
+
+@media screen and (min-width:768px) {
+    .menu-lista {
+        flex-direction: row;
+        margin-top: 20px;
+    }
+}
+.languages{
+    display: flex;
+    transform: translateY(-150%);
+    transition: transform 0.3s;
+    text-align: right;
+    
+}
+
+.menu-item {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    margin-right: 20px;
+   
+
+}
+
+.menu-click {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    transition: 0.7s;
+}
+
+.menu-click:after {
+    content: '';
+    background-color: rgb(176, 176, 176);
+    height: 1px;
+    width: 0;
+    left: 0;
+    bottom: 1px;
+    display: block;
+    transition: 0.3s ease-in-out;
+
+}
+
+.menu-click:hover::after {
+    content: '';
+    height: 1px;
+    width: 100%;
+    color: rgb(176, 176, 176);
+    display: block;
+}
+
+.menu-click:hover {
+    color: rgb(176, 176, 176);
+    font-weight: normal;
+}
+
+.informacion {
+    position: relative;
+    text-align: left;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:768px) {
+    .informacion {
+        padding-top: 20px;
+    }
+}
+
+.information__intro {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    width: 80%;
+}
+
+@media screen and (min-width:478px) {
+    .information__intro {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .information__intro {
+        flex-direction: row;
+        margin-bottom: 50px;
+    }
+}
+
+.information__text {
+    margin-right: 30px;
+
+}
+
+.informacion-nombre {
+    font-family: 'Lora', sans-serif;
+    font-weight: lighter;
+    color: #ffffff;
+    font-size: 60px;
+}
+
+.informacion-apellido {
+    font-family: 'Bona Nova', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 60px;
+    padding-left: 35px;
+}
+
+.informacion-speech {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: #ffffff;
+    padding: 30px 0;
+    text-align: left;
+}
+
+@media screen and (min-width:768px) {
+    .informacion-speech {
+        
+        padding: 30px 0;
+        text-align: center;
+    padding-left: 150px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .informacion-nombre {
+
+        font-size: calc(1vw + 6rem)
+    }
+
+    .informacion-apellido {
+        font-size: calc(1vw + 7.1rem);
+    }
+}
+.information__img img{
+    max-width: 100%;
+    
+    border-radius: 50%;
+}
+.information__resume {
+    width: 80%;
+    padding: 30px 0;
+    display: flex;
+    color: #ffffff;
+    font-family: 'Lora', sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+}
+
+.en{
+    color:#ffffff ;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 100;
+    padding: 0px 10px;
+}
+.es{
+    color:#ffffff ;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 100;
+    padding: 0px 10px;
+}
+.check{
+    position: relative;
+    width: 50px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.check:before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: #c9c7c7;
+    border-radius: 25px;
+}
+.check:after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #0b3c4d;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+}
+.check:checked:after{
+    left: 25px;
+    border: 2px solid #fff;
+}
+.check:checked::before{
+    background: #c9c7c7;
+}

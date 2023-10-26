@@ -1,0 +1,37 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    margin: auto;
+}
+
+/*body{
+    width:100%;
+    max-width:100%;
+    text-align: center;
+}*/
+html {
+    scroll-behavior: smooth;
+}
+
+.cuerpo {
+    position: relative;
+    color: #000000;
+}
+
+
+
+/*  background-color: #0b3c4d */
+
+/* @media(min-width:768px){ 
+    .education{
+        margin: 0px 60px;
+    }
+}*/
+
+
+
+
+
+
+
+
