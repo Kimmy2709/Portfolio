@@ -2,7 +2,7 @@ var changeLanguage = document.querySelector(".check");
 
         if (localStorage.getItem("selectedLanguage") === "en") {
             changeLanguage.checked = true;
-            if (window.location.pathname !== "/en/index.html") {
+            if (window.location.pathname !== "/en-index.html") {
                 window.location.href = "en-index.html";
             }
         } else {
